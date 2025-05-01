@@ -49,7 +49,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         ("role".to_string(), "user".to_string()),
         (
             "content".to_string(),
-            "Can you write me a 10 paragraph essay about LLM.".to_string(),
+            "What is the price of pi crypto today.".to_string(),
         ),
     ]));
 

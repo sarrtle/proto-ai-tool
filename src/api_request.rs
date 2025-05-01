@@ -183,6 +183,10 @@ pub async fn send_request(
 
                 chunk_buffer.push_str(&response_model.candidates[0].content.parts[0].text);
 
+                if response_model.candidates[0].grounding_metadata {
+                    chunk_buffer.push_str("\n\n[FROM ONLINE SOURCE]");
+                }
+
                 call_function(chunk_buffer.to_string(), &on_chunk);
             }
             Err(e) => {
