@@ -30,7 +30,7 @@ pub async fn send_request(
     error_callback: FunctionType,
 ) {
     // construct important variables
-    let model: &str = "gemini-2.5-flash-preview-04-17";
+    let model: &str = "gemini-2.5-flash";
 
     // get api key from environment variable
     let api_key = match std::env::var("GOOGLE_API_KEY") {
